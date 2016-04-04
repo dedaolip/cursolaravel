@@ -19,6 +19,10 @@ class CreateProductsTable extends Migration
             $table->decimal('price_cost', 8,2);
             $table->decimal('price_resale',8,2);
 
+            //Foregin_keys
+            $table->unsignedInteger('category_id')->unsigned(); //unsignedInteger significa que so recebera numeros maiores do que zero
+            $table->unsignedInteger('provider_id');
+            $table->unsignedInteger('brand_id');
 
         });
     }
