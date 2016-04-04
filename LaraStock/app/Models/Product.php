@@ -1,18 +1,30 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class ModelsProduct extends Model
+class Product extends Model
 {
     protected $table = 'products';
     public $timestamps = false;
     protected $fillable = ['name', 'description', 'price_cost', 'price_resale'];
 
-
-    public function categories(){
+    public function category()
+    {
         return $this->belongsTo(Category::class);
     }
+
+    public function brands()
+    {
+        return $this->hasMany(Brand::class);
+    }
+
+    public function providers()
+    {
+        return $this->hasMany(Provider::class);
+    }
+
 
 }
