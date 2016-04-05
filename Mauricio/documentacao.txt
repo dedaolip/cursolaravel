@@ -1,0 +1,33 @@
+Cadastro Cliente
+	id = int notnull autoincrement
+	data_cad = date
+	nome = varchar(80)
+	complemento = varchar(20)
+	bairro = varchar(30)
+	cep = varchar(8)
+	fone = varchar(11)
+	cidade = varchar(80)
+	uf = varchar(2)
+
+Cadastro Produto
+	id = int notnull autoincrement
+	data_cad = date
+	desc_prod = varchar(255)
+	val_ultima_comp = double
+	val_venda = double
+
+Cadastro Ordem de Serviço
+	tipo = varchar(15)
+	relat = varchar(255)
+	data = date
+	id_cliente = id
+	equip = varchar(30)
+	num_serie = int
+	det_manutencao = varchar(225)
+	obs = varchar(255)
+	qtd_hotas = int
+	valor_hora = double
+	val_total = double
+
+
+	
