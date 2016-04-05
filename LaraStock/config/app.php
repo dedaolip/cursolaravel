@@ -202,6 +202,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Prod' => App\Models\Product::class,
+        'Cat'=> App\Models\Category::class,
+        'brand' =>App\Models\Brand::class,
+        'prov' =>App\Models\Provider::class,
+
     ],
 
 ];

@@ -15,6 +15,8 @@ class CreatePrividersTable extends Migration
         Schema::create('providers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name', 100);
+
+            $table->unsignedInteger('product_id');
         });
     }
 

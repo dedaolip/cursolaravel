@@ -21,8 +21,8 @@ class CreateProductsTable extends Migration
 
             //Foregin_keys
             $table->unsignedInteger('category_id')->unsigned(); //unsignedInteger significa que so recebera numeros maiores do que zero
-            $table->unsignedInteger('provider_id');
-            $table->unsignedInteger('brand_id');
+            //$table->unsignedInteger('provider_id');
+            //$table->unsignedInteger('brand_id');
 
         });
     }
