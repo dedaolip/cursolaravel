@@ -17,7 +17,7 @@ class CreateServiceOrdersTable extends Migration
             $table->string('type', 15);
             $table->string('report', 255);
             $table->date('date');
-            $table->integer('id_costumer');
+            $table->integer('id_costumer'); //FK????
             $table->string('equipament', 30);
             $table->integer('serial_number');
             $table->string('description', 255);
